@@ -6,20 +6,19 @@
     <title>Document</title>
 </head>
 <body>
-    
-let object1 = {name: "rufus",age: "22",email:"rufus090400@gmail.com"}
- let object2 = {name:"pragadee",age: "24",email:"pragadee98@gmail.com"}
+  
+let obj1 = {name: "rufus",age: "22",email:"rufus090400@gmail.com"};
+let obj2 = {name:"pragadee",age: "24",email:"pragadee98@gmail.com"};
+  
+  
 
- let keys= Object.keys(obj1)
- let flag = true;
- for(let e of keys){
-   
+let keys =Object.keys(obj1)
+let flag =true;
+for (let e of keys){
     if(obj1[e]!==obj2[e]){
-        flag = false;
-        break;
+        flag =false;
     }
- }
+}
 flag?console.log("Equal"):console.log("Not Equal")
-
 </body>
 </html>
