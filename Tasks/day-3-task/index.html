@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+let object1 = {name: "rufus",age: "22",email:"rufus090400@gmail.com"}
+ let object2 = {name:"pragadee",age: "24",email:"pragadee98@gmail.com"}
+
+ let keys= Object.keys(obj1)
+ let flag = true;
+ for(let e of keys){
+   
+    if(obj1[e]!==obj2[e]){
+        flag = false;
+        break;
+    }
+ }
+flag?console.log("Equal"):console.log("Not Equal")
+
+</body>
+</html>

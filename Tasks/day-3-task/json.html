@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restcountries</title>
+
+</head>
+<body>
+    <h4>Hello Guvi This rufus</h4>
+    <h4>this is an example for xml http request</h4>
+
+    <script> 
+    console.log("hello guvi")
+
+     function handleData() {
+        let data = (JSON.parse(this.responseText))
+        for(let i =0;i<data.length;i++){
+            console.log(data[i].flags)
+  
+        }
+     }
+
+     const req = new XMLHttpRequest();  
+     req.addEventListener("load", handleData);
+    req.open("GET","https://restcountries.com/v3.1/all")
+    req.send()
+    </script>
+    
+</body>
+</html>
