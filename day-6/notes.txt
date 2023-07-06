@@ -1,0 +1,35 @@
+1.Proto type
+classes
+constructor
+this
+getter,setter
+
+
+PROTOTYPE;-
+Object (properties)=>key.value
+every project has a special called prototype
+prototype 
+var person ={
+    name :"rufus"
+    age :22,
+    role:t2
+}
+
+
+Inheritance;-   fundamental concept of oops
+
+Grandfather   Grandmother
+father            mother
+son               daughter
+
+
+one class inherit properties and methods from another class
+
+
+class;-
+specia; type of function =>proof!!!
+fundamental concet of oops [Object Oriented programming]
+in javascript a class is a blue print or template for craeting object with
+similar properties and behaviours
+
+class whenever start from capital
