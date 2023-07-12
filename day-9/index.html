@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body style="background-color: yellowgreen;">
+    <h1 style="color: rgb(68, 108, 219); font-size: 45px;">Application Form</h1>
+    <style>
+        input {
+            color: burlywood;
+        }
+    </style>
+
+    <form>
+        <label for="name">Name</label>
+        <input id="name" type="text">
+        <br />
+        <br />
+        <label for="email">Email</label>
+        <input id="email" type="email">
+        <br />
+        <br />
+        <label for="password">Password</label>
+        <input id="passwo   rd" type="password">
+        <br />
+        <br />
+        <label for="dob">DOB</label>
+        <input id="dob" type="date">
+        <br />
+        <br />
+        <label for="gender" style="color: blueviolet;">Gender</label>
+        <input id="gender" type="radio" name="gender"><label>Male</label> 
+        <input id="gender" type="radio" name="gender"><label>Female</label> 
+        <br />
+        <br />
+        <label>Upload Documents</label>
+        <input type="file">
+        <br />
+        <br />
+        <label>City:</label>
+        <select>
+            <option>Vellore</option>
+            <option>Kanchipuram</option>
+            <option>Yelagiri</option>
+        </select>
+    
+        <input type="submit" value="submit">
+        <input type="reset" value="cancel">
+
+    </form>
+    
+</body>
+</html>

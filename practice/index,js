@@ -1,0 +1,21 @@
+class Pen {
+    constructor(name){
+     this.shopName = name
+    }
+     getName(){
+         return this,shopName
+     }
+     
+class Pencil extends Pen{
+    constructor(name,id){
+        super(name)
+        this.shopId = id
+    }
+    getId (){
+        return this.shopId
+    }
+}     
+     let rufus = new Pen("guvi","07")
+     console.log(rufus.shop)
+    
+}
