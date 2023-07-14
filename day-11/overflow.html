@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        width: 200px;
+        height: 150px;
+        background-color: rgb(31, 214, 174);
+        margin: 10px;
+        margin: 10px solid black;
+      }
+      .hidden {
+        overflow: hidden;
+      }
+      .scroll {
+        overflow: scroll;
+      }
+      .visible {
+        overflow: visible;
+      }
+      .auto {
+        overflow: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Overflow</h1>
+    <div class="container hidden">
+      contentwith hidden overflow any overflowing content is hidden
+    </div>
+    <div class="container scroll">
+      content with scrollable overflow, scrolbar are always visible
+    </div>
+    <div class="container auto">
+      content with auto overflow, scrollbar appear when needed
+    </div>
+    <div class="container visible">
+      content with visible overflow content extends beyond elements dimensions.
+    </div>
+  </body>
+</html>
