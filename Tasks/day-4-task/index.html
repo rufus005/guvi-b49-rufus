@@ -12,67 +12,67 @@
 
     <script>
 // a.Print odd numbers in an array
-// let oddNum = []
+let oddNum = []
 
-// function findOdd(arrOfNum){
-//     for (let i=0;i<arrOfNum.length;i++){
-//   if(arrOfNum[i]%2==1){
-//       oddNum.push(arrOfNum[i])
+function findOdd(arrOfNum){
+    for (let i=0;i<arrOfNum.length;i++){
+  if(arrOfNum[i]%2==1){
+      oddNum.push(arrOfNum[i])
 
-//       }
-//     } return oddNum
-// }
+      }
+    } return oddNum
+}
 
-// let arrOfNum =[1,2,3,4,5,6,7,8] 
-// console.log(findOdd(arrOfNum))
+let arrOfNum =[1,2,3,4,5,6,7,8] 
+console.log(findOdd(arrOfNum))
 
 // b.Convert all the strings to title caps in a string array
 
-// function titleCase(str){
+function titleCase(str){
     
-//     return str.toLowerCase().split(" ").map(function(word){
-//     return (word.charAt(0).toUpperCase() + word.slice(1));
-//     }).join(" ");
+    return str.toLowerCase().split(" ").map(function(word){
+    return (word.charAt(0).toUpperCase() + word.slice(1));
+    }).join(" ");
     
-// }console.log(titleCase("hi guvi"));
+}console.log(titleCase("hi guvi"));
 
 // c. Sum of all numbers in an array
 
-// function addition(num){
-// for (value of num) {
-//     sum+=value;
+function addition(num){
+for (value of num) {
+    sum+=value;
     
-// }
-// return sum;
-// }
-// var sum =0 
-// var num =[1,2,3,4,5];
-// console.log(addition(num));
+}
+return sum;
+}
+var sum =0 
+var num =[1,2,3,4,5];
+console.log(addition(num));
 
 // d.Return all the prime numbers in an array
 
-// function isPrime(num){
-//     for(var i=2;num>i;i++){
-//         if(num%i==0){
-//             return false;
-//         }
-//     }
-//           return num > 1;
-// }
-// var primeNumber = [1,2,3,4,7,5,6,8,9];
-// console.log(primeNumber.filter(isPrime));
+function isPrime(num){
+    for(var i=2;num>i;i++){
+        if(num%i==0){
+            return false;
+        }
+    }
+          return num > 1;
+}
+var primeNumber = [1,2,3,4,7,5,6,8,9];
+console.log(primeNumber.filter(isPrime));
 
 
 // E.Return all the palindromes in an array
 
-// function polindrome(array){
-//     for(let string of array) {
-//         let reverse =string.split("").reverse().join("");
-//         if(string==reverse) {
-//         output.push(reverse)
-//         }
-//     } return output;
-// }
+function polindrome(array){
+    for(let string of array) {
+        let reverse =string.split("").reverse().join("");
+        if(string==reverse) {
+        output.push(reverse)
+        }
+    } return output;
+}
 
 
     </script>
