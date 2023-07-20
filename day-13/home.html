@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div id="div-1">DOM-Document Object model</div>
+
+    <script>
+        const anchorElement = document.createElement("a");
+        anchorElement.setAttribute("href","https://us06web.zoom.us/rec/play/cvdycGtuCPrtfvWPnfdIWtUgyLUPCBAMlVx5dzGgoGHCNabE78ceIGUtR_-_W2-mUCqjh1c_dF25DmXY.m9XdCmx8LQ8ZAIFK?canPlayFromShare=true&from=share_recording_detail&continueMode=true&componentName=rec-play&originRequestUrl=https%3A%2F%2Fus06web.zoom.us%2Frec%2Fshare%2FRi47mx1j4aKpnFtEAidZTVTqyngmJvG5oCu24yMOSAuE4Qzjt_VVGsy7rbUbvtTr.0e-PZ3PM7UBudhjY");
+        anchorElement.setAttribute("target","_blank");
+        anchorElement.innerText =" Click  here  ";
+        const parameter = document.getElementById("div-1")
+        parameter.append(anchorElement);
+
+    
+
+       const para =document.createElement("p")
+       para.innerText="Hello Rufus0";
+       para.innerHTML=` <span style="color: blue;">Rufus</span>`
+       parameter.appendChild(para)
+
+       const anchor= document.createElement("a")
+       anchor.setAttribute("href","https://us06web.zoom.us/rec/play/cvdycGtuCPrtfvWPnfdIWtUgyLUPCBAMlVx5dzGgoGHCNabE78ceIGUtR_-_W2-mUCqjh1c_dF25DmXY.m9XdCmx8LQ8ZAIFK?canPlayFromShare=true&from=share_recording_detail&continueMode=true&componentName=rec-play&originRequestUrl=https%3A%2F%2Fus06web.zoom.us%2Frec%2Fshare%2FRi47mx1j4aKpnFtEAidZTVTqyngmJvG5oCu24yMOSAuE4Qzjt_VVGsy7rbUbvtTr.0e-PZ3PM7UBudhjY");
+       anchor.setAttribute("target","_blank");
+       anchor.innerText=" Watch here ";
+       const elam = document.getElementById("div-1");
+       elam.appendChild(anchor)
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- <div id="myDiv">Initial Text Me!!!</div> -->
+    <div>
+      <div class="para">dive para</div>
+      <p class="para">class 1</p>
+      <p class="para">class 2</p>
+      <p class="para">class 3</p>
+      <p class="para">class 4</p>
+    </div>
+    <script>
+      // const ele =document.getElementById("Div")
+      // ele.innerText ="updated one "
+      // ele.innerHTML=` <span style="color: blue;">updated new one</span>`
+      // document.body.append(ele)
+
+      const ele = document.querySelector(".para");
+      ele.style.color = "blue";
+
+      const paraElam = document.querySelectorAll(".para");
+      console.log("paraElam", paraElam);
+      paraElam.forEach((find) => {
+        find.style.color = "red";
+      });
+    </script>
+  </body>
+</html>

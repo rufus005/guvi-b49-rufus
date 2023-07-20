@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <style>
+        div {
+            border:1px solid black;
+            margin:10px
+        }
+    </style>
+</head>
+<body>
+    <div id="parent"> parent-Div</div>
+    <div id="Div">
+        <a id="about" href="/about">About</a>
+    </div>
+    
+    <script>
+      const ele = document.createElement("div");
+      ele.setAttribute("id","mainDiv");
+      ele.setAttribute("class","main");
+      //set the text content of the new element
+        ele.innerText= "Hello guvi, welcome to B49 batch";
+        const pare = document.getElementById("parent");
+        pare.appendChild(ele);
+    //     const child= doucument.createElement("div");
+    //     child.setAttribute("id","main");
+    //     child.innerText="hello Guvi this rufus";
+    //   const mainChild = document.getElementById("parent");
+    //   mainChild.appendChild(child) 
+       const someDiv = document.createElement("Div");
+       someDiv.setAttribute("id","main");
+    //    someDiv.in("click")
+       someDiv.innerText=("hello","https//.www.google.com")
+       
+      const rufus= document.getElementById("Div");
+      rufus.appendChild(someDiv)
+
+      const anchor= document.createElement("a")
+       anchor.setAttribute("href","https://us06web.zoom.us/rec/play/cvdycGtuCPrtfvWPnfdIWtUgyLUPCBAMlVx5dzGgoGHCNabE78ceIGUtR_-_W2-mUCqjh1c_dF25DmXY.m9XdCmx8LQ8ZAIFK?canPlayFromShare=true&from=share_recording_detail&continueMode=true&componentName=rec-play&originRequestUrl=https%3A%2F%2Fus06web.zoom.us%2Frec%2Fshare%2FRi47mx1j4aKpnFtEAidZTVTqyngmJvG5oCu24yMOSAuE4Qzjt_VVGsy7rbUbvtTr.0e-PZ3PM7UBudhjY");
+       anchor.setAttribute("target","_blank");
+       anchor.innerText="click Me here to watch the recording video";
+       const elam = document.getElementById("");
+       elam.appendChild(anchor)
+
+       
+    </script>
+</body>
+</html>
