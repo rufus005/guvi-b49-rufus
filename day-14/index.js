@@ -26,10 +26,23 @@ function performCalculation(operator) {
                 result ="invalid operator!!";
     }
     // alert(result);
+    
     document.getElementById("result").innerText=result;
     
+    const msg =confirm("Do you want to show the result??")
+    if(msg) {
+      document.getElementById("result").innerText = result;
+    } else {
+      document.getElementById("result").innerText ="Result can not be shown!!!"
+    }
+
 }
 
-setTimeout(()=>{
-    console.log("this message")
-}, 200);
+
+// setTimeout(() => {
+//     console.log("this message will be looged after 2000 milleseconds")
+// }, 2000);
+
+// setInterval(() => {
+//   alert("hi,how ar u")
+// }, 2000);
