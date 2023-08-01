@@ -1,0 +1,69 @@
+Copy code
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Add necessary CSS and JS libraries -->
+</head>
+<body>
+    <!-- Your HTML form and table elements -->
+    <form onsubmit="handleFormSubmit(event)">
+        <input type="text" id="name" placeholder="Name">
+        <input type="number" id="age" placeholder="Age">
+        <button type="submit">Submit</button>
+    </form>
+    <table>
+        <tbody id="dataRows"></tbody>
+    </table>
+
+    <script>
+        // Sample data to store initial records
+        const data = [
+            { name: "Rufus", age: 22 },
+            { name: "Ruban", age: 25 }
+        ];
+
+        // Function to display data in the table
+        function displayData() {
+            const dataRows = document.getElementById("dataRows");
+            dataRows.textContent = "";
+
+            data.forEach((value, index) => {
+                const row = `
+                <tr>
+                    <td>${value.name}</td>
+                    <td>${value.age}</td>
+                    <td>
+                        <button class="btn btn-info edit-btn">Edit</button>   
+                        <button class="btn btn-danger delete-btn">Delete</button>
+                    </td>
+                </tr>
+                `;
+                dataRows.insertAdjacentHTML("beforeEnd", row);
+            });
+        }
+
+        // Function to handle form submission
+        function handleFormSubmit(event) {
+            event.preventDefault();
+            const nameInput = document.getElementById("name");
+            const ageInput = document.getElementById("age");
+
+            const name = nameInput.value;
+            const age = ageInput.value;
+
+            // Add data to the array
+            data.push({ name, age });
+
+            // Clear form fields
+            nameInput.value = "";
+            ageInput.value = "";
+
+            // Display updated data in the table
+            displayData();
+        }
+
+        // Initial display of data
+        displayData();
+    </script>
+</body>
+</html>
