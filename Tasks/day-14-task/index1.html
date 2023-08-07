@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <style>
+      .container {
+        max-width: 300px;
+        margin: 0 auto;
+        padding: 20px;
+        border: 1px solid black;
+        border-radius: 5px;
+        margin-bottom: 10px;
+      }
+      .form-group {
+        margin-bottom: 10px;
+      }
+      .result {
+        font-weight: bold;
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <!-- <form class="container"> -->
+      <h1>Calculator</h1>
+      <div class="form-group">
+        <label for="sam">Number1:</label>
+        <input type="number" id="sam" />
+      </div>
+      <div class="form-group">
+        <label for="sam1">Number2:</label>
+        <input type="number" id="sam1" />
+      </div>
+      <button onclick="promiseCalculator('add')">Add</button>
+      <button onclick="promiseCalculator('sub')">Sub</button>
+      <button onclick="promiseCalculator('mul')">Mul</button>
+      <button onclick="promiseCalculator('div')">Div</button>
+
+      <div class="result">
+        Result:
+        <span id="result"></span>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
