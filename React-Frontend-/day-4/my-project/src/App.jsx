@@ -8,7 +8,7 @@ function App() {
 
   return (
     <>
-      
+      <h2>Rufus Components</h2>
     </>
   )
 }

@@ -1,7 +1,11 @@
 :root {
+  border: 5px solid black;
+  padding: 10px;
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
+  display:block;
+  justify-content: center;
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
@@ -64,6 +68,12 @@ button:focus-visible {
     color: #747bff;
   }
   button {
-    background-color: #f9f9f9;
+    background-color:#186fb6;
   }
+}
+
+  
+.div- {
+  display: inline-block;
+  justify-content: space-between;
 }
